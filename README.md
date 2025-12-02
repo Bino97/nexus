@@ -101,7 +101,7 @@ export async function middleware(request: NextRequest) {
 }
 ```
 
-See the [built-in documentation](http://localhost:4000/admin/docs) for **Express**, **Flask**, and **Go** examples.
+See the built-in documentation for **Express**, **Flask**, and **Go** examples (when running).
 
 ## 🗄️ Tech Stack
 
@@ -114,13 +114,14 @@ See the [built-in documentation](http://localhost:4000/admin/docs) for **Express
 ## 📖 Documentation
 
 - **[In-Depth README](INDEPTH_README.md)** - Comprehensive documentation
-- **[Integration Docs](/admin/docs)** - Built-in integration guides (when running)
+- **Integration Docs at /admin/docs** - Built-in integration guides (when running)
 
 ## 📝 License
 
 This project is licensed under a **No-Resale Open Source License**.
 
 ✅ **You CAN:**
+
 - Use NEXUS for **free** in your company or organization
 - Use NEXUS for personal, educational, or commercial purposes
 - Modify and customize the code for your needs
@@ -128,6 +129,7 @@ This project is licensed under a **No-Resale Open Source License**.
 - Share your modifications with others (under the same license)
 
 ❌ **You CANNOT:**
+
 - **Sell or resell** NEXUS as a product
 - Offer NEXUS as a **paid hosted/SaaS service**
 - Repackage and sell NEXUS under a different name

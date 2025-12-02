@@ -324,7 +324,7 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 If you encounter any issues or have questions:
 
 - Open an [issue](https://github.com/yourusername/nexus/issues)
-- Check the [documentation](http://localhost:4000/admin/docs) (when running)
+- Check the documentation (when running)
 
 ---
 
