@@ -49,7 +49,7 @@ NEXUS is a centralized authentication system that provides single sign-on (SSO) 
 
 ```bash
 # Clone the repository
-git clone https://github.com/yourusername/nexus.git
+git clone https://github.com/bino97/nexus.git
 cd nexus
 
 # Install dependencies
