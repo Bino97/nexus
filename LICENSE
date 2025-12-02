@@ -1,0 +1,94 @@
+NEXUS Open Source License (No Resale)
+Version 1.0, December 2025
+
+Copyright (c) 2025 Bino97
+
+TERMS AND CONDITIONS
+
+1. DEFINITIONS
+
+"Software" refers to the NEXUS authentication system and all associated
+source code, documentation, and files contained in this repository.
+
+"You" or "Your" refers to any individual or legal entity exercising
+permissions granted by this License.
+
+2. GRANT OF LICENSE
+
+Subject to the terms and conditions of this License, You are granted a
+worldwide, royalty-free, non-exclusive license to:
+
+a) Use, copy, and modify the Software for any purpose (personal, educational,
+   commercial, or otherwise)
+b) Distribute copies of the Software
+c) Create derivative works based on the Software
+d) Deploy the Software internally within your organization or company
+
+3. RESTRICTIONS
+
+You may NOT:
+
+a) Sell, rent, lease, or sublicense the Software or derivative works as a
+   standalone product or service
+b) Offer the Software as a paid hosted/SaaS solution where the primary value
+   proposition is NEXUS itself
+c) Repackage and resell the Software under a different name
+d) Remove or alter any copyright, trademark, or attribution notices
+e) Use the name "NEXUS" or the names of contributors to endorse or promote
+   products derived from this Software without prior written permission
+
+4. PERMITTED COMMERCIAL USE
+
+You ARE allowed to:
+
+a) Use NEXUS within your company or organization at no cost
+b) Deploy NEXUS for internal authentication and access management
+c) Modify NEXUS to fit your business needs
+d) Use NEXUS as part of a larger product or service (where NEXUS is not the
+   primary offering being sold)
+
+Example: A company can use NEXUS to manage authentication for their internal
+tools without paying for a license. However, they cannot sell NEXUS as a
+standalone authentication product to other companies.
+
+5. ATTRIBUTION
+
+You must give appropriate credit to the original author (Bino97), provide
+a link to this license, and indicate if changes were made. You may do so
+in any reasonable manner, but not in any way that suggests the licensor
+endorses You or Your use.
+
+6. SHARE-ALIKE
+
+If You distribute the Software or derivative works, You must distribute
+them under the same license terms as the original.
+
+7. NO WARRANTY
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
+THE SOFTWARE.
+
+8. TERMINATION
+
+This License and the rights granted hereunder will terminate automatically
+upon any breach by You of the terms of this License. Individuals or entities
+who have received derivative works from You under this License, however, will
+not have their licenses terminated provided such individuals or entities
+remain in full compliance with those licenses.
+
+9. DISCLAIMER OF LIABILITY
+
+IN NO EVENT UNLESS REQUIRED BY APPLICABLE LAW WILL ANY COPYRIGHT HOLDER BE
+LIABLE TO YOU FOR DAMAGES, INCLUDING ANY GENERAL, SPECIAL, INCIDENTAL OR
+CONSEQUENTIAL DAMAGES ARISING OUT OF THE USE OR INABILITY TO USE THE SOFTWARE
+(INCLUDING BUT NOT LIMITED TO LOSS OF DATA OR DATA BEING RENDERED INACCURATE
+OR LOSSES SUSTAINED BY YOU OR THIRD PARTIES OR A FAILURE OF THE SOFTWARE TO
+OPERATE WITH ANY OTHER PROGRAMS), EVEN IF SUCH HOLDER HAS BEEN ADVISED OF
+THE POSSIBILITY OF SUCH DAMAGES.
+
+END OF TERMS AND CONDITIONS
