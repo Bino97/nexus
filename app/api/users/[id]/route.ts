@@ -4,6 +4,7 @@ import db from '@/lib/db';
 import { requireAdmin } from '@/lib/auth';
 import { logAudit } from '@/lib/audit';
 import { User, UpdateUserRequest } from '@/lib/types';
+import { validatePassword } from '@/lib/password-validator';
 
 // GET /api/users/[id] - Get user by ID
 export async function GET(
@@ -62,9 +63,14 @@ export async function PUT(
     }
 
     if (body.password !== undefined) {
-      if (body.password.length < 8) {
+      // Validate password complexity
+      const passwordValidation = validatePassword(body.password);
+      if (!passwordValidation.valid) {
         return NextResponse.json(
-          { error: 'Password must be at least 8 characters' },
+          {
+            error: 'Password does not meet complexity requirements',
+            details: passwordValidation.errors,
+          },
           { status: 400 }
         );
       }

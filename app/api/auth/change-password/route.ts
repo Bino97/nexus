@@ -5,6 +5,7 @@ import { getSession, getUserApps, getCookieName } from '@/lib/auth';
 import { createToken } from '@/lib/jwt';
 import { logAudit } from '@/lib/audit';
 import { ChangePasswordRequest, User } from '@/lib/types';
+import { validatePassword } from '@/lib/password-validator';
 
 export async function POST(request: NextRequest) {
   try {
@@ -27,9 +28,14 @@ export async function POST(request: NextRequest) {
       );
     }
 
-    if (new_password.length < 8) {
+    // Validate password complexity
+    const passwordValidation = validatePassword(new_password);
+    if (!passwordValidation.valid) {
       return NextResponse.json(
-        { error: 'New password must be at least 8 characters' },
+        {
+          error: 'Password does not meet complexity requirements',
+          details: passwordValidation.errors,
+        },
         { status: 400 }
       );
     }
@@ -85,8 +91,8 @@ export async function POST(request: NextRequest) {
 
     response.cookies.set(getCookieName(), token, {
       httpOnly: true,
-      secure: process.env.NODE_ENV === 'production',
-      sameSite: 'lax',
+      secure: process.env.NODE_ENV === 'production', // Secure cookies in production only
+      sameSite: 'strict', // Prevent CSRF attacks
       maxAge: 60 * 60 * 24, // 24 hours
       path: '/',
     });

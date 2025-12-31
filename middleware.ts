@@ -5,7 +5,10 @@ import { jwtVerify } from 'jose';
 const COOKIE_NAME = 'nexus_token';
 
 const getSecret = () => {
-  const secret = process.env.NEXUS_JWT_SECRET || 'nexus-dev-secret-change-in-production-32chars';
+  const secret = process.env.NEXUS_JWT_SECRET || process.env.JWT_SECRET;
+  if (!secret) {
+    throw new Error('JWT secret not configured');
+  }
   return new TextEncoder().encode(secret);
 };
 

@@ -29,14 +29,23 @@ NEXUS is a centralized authentication system that provides single sign-on (SSO) 
 
 ## ✨ Key Features
 
+### Security
 - **🔐 JWT-based Authentication** - Secure token-based auth with session management
+- **🛡️ Password Complexity Requirements** - Enforced strong passwords with validation
+- **⏱️ Rate Limiting** - Brute-force protection (5 attempts per 15 minutes)
+- **🔒 Secure Cookies** - HTTP-only, strict same-site policy
+- **📝 Audit Logging** - Track all authentication and admin actions
+
+### User Experience
 - **🎨 Customizable Dashboard** - Personalize with colors, backgrounds, opacity, and favorites
 - **👥 User Management** - Full admin portal with user CRUD and access control
-- **🚀 Multi-Framework Support** - Next.js, Express, Flask, Go integration guides
 - **📊 Access Matrix** - Visual overview of user-app permissions
 - **🎨 Site-wide Branding** - Customize name, logo, colors across all pages
-- **📝 Audit Logging** - Track all authentication and admin actions
 - **💚 Health Monitoring** - Real-time status indicators for connected apps
+
+### Integration
+- **🚀 Multi-Framework Support** - Next.js, Express, Flask, Go integration guides
+- **📖 Built-in Documentation** - Interactive integration examples at `/admin/docs`
 
 ## 🏃 Quick Start
 
@@ -110,6 +119,36 @@ See the built-in documentation for **Express**, **Flask**, and **Go** examples (
 - **Auth:** JWT tokens with jose
 - **Styling:** Tailwind CSS v4
 - **Icons:** lucide-react
+
+## 🔒 Security Features
+
+NEXUS includes enterprise-grade security features:
+
+### Password Policy
+All passwords must meet the following requirements:
+- Minimum 12 characters
+- At least one uppercase letter (A-Z)
+- At least one lowercase letter (a-z)
+- At least one number (0-9)
+- At least one special character (!@#$%^&*()_+-=[]{};\':"|,.<>/?)
+- No common passwords or patterns
+- No repeated or sequential characters
+
+### Brute-Force Protection
+- Rate limiting: 5 failed login attempts per 15 minutes per IP address
+- Automatic lockout with countdown timer
+- Rate limit resets on successful login
+
+### Secure Communication
+- HTTP-only cookies (prevents XSS attacks)
+- Strict SameSite policy (prevents CSRF attacks)
+- Always-on secure flag (HTTPS enforcement)
+- JWT tokens with 24-hour expiration
+
+### Environment Validation
+- Startup validation ensures JWT secret is configured
+- Minimum 32-character secret requirement
+- Prevents running with default/development secrets in production
 
 ## 📖 Documentation
 

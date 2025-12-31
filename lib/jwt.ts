@@ -1,12 +1,15 @@
 import { SignJWT, jwtVerify } from 'jose';
 import { NexusTokenPayload } from './types';
+import { config, validateConfig } from './config';
+
+// Validate configuration on module load
+validateConfig();
 
 const getSecret = () => {
-  const secret = process.env.NEXUS_JWT_SECRET || 'nexus-dev-secret-change-in-production-32chars';
-  return new TextEncoder().encode(secret);
+  return new TextEncoder().encode(config.jwtSecret);
 };
 
-const TOKEN_EXPIRY = process.env.NEXUS_TOKEN_EXPIRY || '24h';
+const TOKEN_EXPIRY = config.tokenExpiry;
 
 export async function createToken(payload: Omit<NexusTokenPayload, 'iat' | 'exp'>): Promise<string> {
   const secret = getSecret();
