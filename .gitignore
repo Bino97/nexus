@@ -44,6 +44,3 @@ next-env.d.ts
 nexus.db
 nexus.db-shm
 nexus.db-wal
-
-# Claude Code
-.claude
